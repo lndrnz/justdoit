@@ -59,7 +59,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Welcome, Lander</h1>
+      <h1>Just Do It!</h1>
       <h4> Your Tasks</h4>
 
       <div className="todos">
