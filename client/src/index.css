@@ -1,23 +1,22 @@
 :root {
-  --primary: #D81E5B;
-  --secondary: #8A4EFC;
-  --light: #EEE;
+  --primary: #d81e5b;
+  --secondary: #8a4efc;
+  --light: #eee;
   --light-alt: #61759b;
-  --dark: #131A26;
-  --dark-alt: #202B3E;
+  --dark: #131a26;
+  --dark-alt: #202b3e;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
 }
 
 body {
   background-color: var(--dark-alt);
   color: var(--light);
-
 }
 
 .App {
@@ -58,13 +57,17 @@ h4 {
   height: 20px;
   margin-right: 16px;
   border-radius: 999px;
-  background-color:  var(--dark-alt);
+  background-color: var(--dark-alt);
   transition: 0.4s;
 }
 
 .todo.is-complete .checkbox {
   background-color: var(--primary);
-  background-image:  linear-gradient(to bottom, var(--primary), var(--secondary));
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary),
+    var(--secondary)
+  );
 }
 
 .todo .text {
@@ -89,14 +92,13 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .addPopup {
   position: fixed;
   bottom: 32px;
   right: 32px;
-  display:  flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 
@@ -107,9 +109,12 @@ h4 {
   font-weight: 28px;
   font-weight: 900;
   color: var(--light);
-  background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+  background-image: linear-gradient(
+    to bottom right,
+    var(--primary),
+    var(--secondary)
+  );
   cursor: pointer;
-
 }
 
 .popup {
@@ -152,12 +157,12 @@ h4 {
 
 .add-todo-input {
   appearance: none;
-  border:none;
+  border: none;
   outline: none;
-  background-color: #FFF;
+  background-color: #fff;
   padding: 16px;
-  border-radius:  16px;
-  box-shadow:  0px 2px 24px rgba((0, 0, 0, 0.2), green, blue, alpha);
+  border-radius: 16px;
+  box-shadow: 0px 2px 24px rgba((0, 0, 0, 0.2), green, blue, alpha);
   width: 100%;
   font-size: 20px;
 }
@@ -172,5 +177,5 @@ h4 {
   font-size: 18px;
   margin-top: 16px;
   text-align: center;
-  cursor: pointer
+  cursor: pointer;
 }
